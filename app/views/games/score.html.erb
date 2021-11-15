@@ -1,0 +1,15 @@
+<h1>Games#score</h1>
+<p>Find me in app/views/games/score.html.erb</p>
+<% if @included%>
+<%= 'Word is included in the array'%>
+<% else%>
+<%= 'No word found'%>
+<% end%>
+
+<% if @english_word%>
+<%= "#{@word} is an English word"%>
+<% else%>
+<%= "#{@word} is not an English word"%>
+<% end%>
+<hr>
+<h1>Your score:<%=@player_score%></h1>
